@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FEARLESS Gaming — gaming, creativity, Minecraft, Free Fire and web development.">
+<meta name="theme-color" content="#070b16">
+<title>FEARLESS Gaming | Play Without Limits</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background: #070b16;
+  color: #fff;
+}
+header {
+  padding: 20px 15px;
+  text-align: center;
+  background: #10162a;
+  border-bottom: 1px solid #00eaff;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+header p {
+  color: #aab7d4;
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 17px 10px;
+  background: #0b1120;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+nav a:hover { color: #00eaff; }
+
+.hero {
+  min-height: 440px;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 40%, #193a62, #070b16 70%);
+}
+.tag {
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+.hero h1 {
+  font-size: clamp(38px, 10vw, 70px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+.hero h1 span { color: #00eaff; }
+.hero p {
+  color: #bac7e0;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 20px 0 28px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: #00d9ff;
+  color: #07101c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-3px); }
+.btn-outline {
+  background: transparent;
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  margin-left: 8px;
+}
+section { padding: 55px 18px; }
+.section-title {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+.section-sub {
+  text-align: center;
+  color: #9eacc7;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 15px;
+  max-width: 950px;
+  margin: auto;
+}
+.card {
+  padding: 25px 14px;
+  text-align: center;
+  background: #111a2d;
+  border: 1px solid #263c60;
+  border-radius: 14px;
+  transition: .25s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00eaff;
+  box-shadow: 0 0 20px #00eaff22;
+}
+.emoji { font-size: 42px; }
+.card h3 {
+  color: #00eaff;
+  margin: 14px 0 10px;
+}
+.card p {
+  color: #b6c4df;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.about {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  color: #c1cce0;
+  line-height: 1.9;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.skills span {
+  border: 1px solid #263c60;
+  background: #111a2d;
+  color: #00eaff;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.contact {
+  text-align: center;
+  background: radial-gradient(ellipse, #12223e, #070b16 75%);
+}
+footer {
+  background: #10162a;
+  color: #9eacc7;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 12px;
+  line-height: 2;
+}
+.glow { animation: pulse 2s infinite alternate; }
+@keyframes pulse {
+  from { text-shadow: 0 0 5px #00eaff; }
+  to { text-shadow: 0 0 22px #00eaff, 0 0 35px #315bff; }
+}
+@media (max-width: 420px) {
+  nav { gap: 14px; }
+  nav a { font-size: 13px; }
+  .btn-outline { margin: 12px 0 0; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo glow">⚡ FEARLESS</div>
+  <p>GAMING • CREATIVITY • SKILL</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#games">Games</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section class="hero" id="home">
+    <div class="tag">WELCOME TO MY WORLD</div>
+    <h1>PLAY <span>FEARLESS</span></h1>
+    <p>
+      Gaming, creativity and next-level skills.
+      Explore my gaming world and discover what
+      passion and code can create.
+    </p>
+    <div>
+      <a class="btn" href="#games">EXPLORE GAMES ↓</a>
+      <a class="btn btn-outline" href="#about">ABOUT ME</a>
+    </div>
+  </section>
+
+  <section id="games">
+    <h2 class="section-title">🎮 MY GAMING ZONE</h2>
+    <p class="section-sub">My favourite worlds, my favourite games.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="emoji">🔥</div>
+        <h3>Free Fire</h3>
+        <p>Battle strategy, fast moves and clutch moments.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">⛏️</div>
+        <h3>Minecraft</h3>
+        <p>Build your world and turn ideas into creations.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🏎️</div>
+        <h3>Racing</h3>
+        <p>Speed, precision and the thrill of racing.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">💻</div>
+        <h3>Coding</h3>
+        <p>Learning web development one project at a time.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">ABOUT FEARLESS</h2>
+    <p class="about">
+      I'm a gaming enthusiast and beginner web developer.
+      FEARLESS is my creative space where I share my interests
+      and practise building websites. My goal is to keep learning,
+      improve my skills and create useful digital projects.
+    </p>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Gaming</span>
+      <span>Creativity</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">LET'S CONNECT</h2>
+    <p class="section-sub">
+      Interested in a website project? Get in touch.
+    </p>
+    <!-- Replace this sample email with your contact email -->
+    <a class="btn"
+       href="mailto:your-email@example.com?subject=Website%20Project">
+       CONTACT ME ✉
+    </a>
+  </section>
+</main>
+
+<footer>
+  © 2026 FEARLESS GAMING<br>
+  Built with HTML & CSS · Keep Learning, Keep Creating.
+</footer>
+</body>
+</html>
